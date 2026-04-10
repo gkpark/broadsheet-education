@@ -41,24 +41,6 @@ const values = [
   },
 ];
 
-const press = [
-  {
-    outlet: 'The Oklahoman',
-    section: 'Education',
-    byline: 'Ben Felder',
-    headline: 'Incoming Oklahoma Teachers Hope for Better Days',
-    year: 'November 27, 2016',
-    desc: 'Profiled as a student teacher at Southeast during a difficult period for Oklahoma public education, Park spoke about passion carrying him past the pressures of low pay and high mandates. "All of that fades away when I get in the classroom," he said.',
-  },
-  {
-    outlet: 'The Oklahoman',
-    section: 'Education',
-    byline: 'Guest Column',
-    headline: 'Teacher Engagement Lacking in OKC School Calendar Change',
-    year: 'September 2018',
-    desc: 'Park argued publicly that the OKCPS board\'s move away from the continuous learning calendar lacked both empirical justification and genuine teacher input. "I am far more concerned that legitimate reasoning behind the change has not been distributed to district stakeholders."',
-  },
-];
 
 export default function AboutPage() {
   return (
@@ -228,39 +210,6 @@ export default function AboutPage() {
 
         <Divider className="my-10" />
 
-        {/* Press */}
-        <div className="mb-10">
-          <p className="font-sans text-xs font-medium uppercase tracking-[0.2em] text-ink-muted mb-2">
-            In the News
-          </p>
-          <h2 className="font-serif text-xl font-bold text-ink mb-2">
-            Featured in The Oklahoman
-          </h2>
-          <p className="font-sans text-sm text-ink-muted mb-6">
-            Coverage on teaching, public advocacy, and Oklahoma City Public Schools.
-          </p>
-          <div className="flex flex-col gap-4">
-            {press.map((item) => (
-              <div key={item.headline} className="border border-paper-rule bg-white">
-                <div className="p-4 border-b border-paper-rule">
-                  <p className="font-sans text-xs uppercase tracking-widest text-accent mb-1">
-                    {item.outlet} · {item.section} · {item.byline}
-                  </p>
-                  <p className="font-serif text-base font-bold text-ink leading-snug">
-                    {item.headline}
-                  </p>
-                </div>
-                <div className="p-4">
-                  <p className="font-mono text-xs text-ink-muted mb-2">{item.year}</p>
-                  <p className="font-sans text-sm text-ink-light leading-relaxed">{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <Divider className="my-10" />
-
         {/* Freire quote */}
         <div className="bg-ink p-8 mb-10">
           <p className="font-serif text-xl italic text-paper leading-relaxed mb-4">
@@ -270,36 +219,6 @@ export default function AboutPage() {
           <p className="font-sans text-xs uppercase tracking-widest text-paper/40">Paulo Freire</p>
         </div>
 
-        {/* Contact */}
-        <div>
-          <p className="font-sans text-xs font-medium uppercase tracking-[0.2em] text-ink-muted mb-2">
-            Get in Touch
-          </p>
-          <h2 className="font-serif text-xl font-bold text-ink mb-2">Contact</h2>
-          <p className="font-sans text-sm text-ink-muted mb-5">
-            Reach out through the Southeast faculty directory or the OKCPS staff directory.
-          </p>
-          <div className="flex flex-wrap gap-3">
-            {[
-              {
-                label: 'Faculty Directory',
-                href: 'https://sehs.okcps.org/our-school/faculty-directory/social-studies-department',
-              },
-              { label: 'Southeast High School', href: 'https://sehs.okcps.org' },
-              { label: 'OKCPS District', href: 'https://www.okcps.org' },
-            ].map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-sans text-sm border border-paper-rule bg-white px-4 py-2.5 text-ink-light hover:border-accent hover:text-accent transition-colors"
-              >
-                {link.label} →
-              </a>
-            ))}
-          </div>
-        </div>
 
       </PageWrapper>
     </div>
