@@ -16,8 +16,8 @@ export default function Footer() {
               </span>
             </div>
             <p className="font-sans text-sm text-paper/60 max-w-xs leading-relaxed">
-              A suite of independent tools for K&#8211;12 students who want to read, write, and
-              think more critically.
+              A growing suite of tools for K&#8211;12 students and educators, built by a teacher
+              to support critical thinking and honest research.
             </p>
           </div>
 

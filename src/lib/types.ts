@@ -10,7 +10,7 @@ export interface HowToUseStep {
 
 export interface ToolDefinition {
   slug: string;
-  url?: string; // external URL — if set, card links out instead of to internal page
+  url?: string; // external URL - if set, card links out instead of to internal page
   title: string;
   tagline: string;
   description: string;

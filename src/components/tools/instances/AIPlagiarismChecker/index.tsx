@@ -58,10 +58,10 @@ export default function AIPlagiarismChecker() {
                 </div>
                 <p className="font-sans text-xs text-ink-muted mt-1">
                   {result.aiScore < 30
-                    ? 'Low — likely human-written'
+                    ? 'Low: likely human-written'
                     : result.aiScore < 60
-                    ? 'Moderate — some AI signals detected'
-                    : 'High — strong AI generation signals'}
+                    ? 'Moderate: some AI signals detected'
+                    : 'High: strong AI generation signals'}
                 </p>
               </div>
 

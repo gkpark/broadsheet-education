@@ -23,7 +23,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: {
     default: 'Broadsheet Education',
-    template: '%s — Broadsheet Education',
+    template: '%s | Broadsheet Education',
   },
   description:
     'A suite of independent tools for K–12 students who want to read, write, and think more critically.',
