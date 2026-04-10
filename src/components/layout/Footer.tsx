@@ -43,7 +43,7 @@ export default function Footer() {
 
         <div className="border-t border-paper/10 py-4">
           <p className="font-sans text-xs text-paper/30">
-            &copy; {new Date().getFullYear()} Broadsheet Education. All rights reserved.
+            &copy; {new Date().getFullYear()} Broadsheet Education. All Rights Reserved. Unauthorized use or reproduction is prohibited.
           </p>
         </div>
       </PageWrapper>

@@ -5,10 +5,14 @@ import { cn } from '@/lib/utils';
 
 export default function ToolCard({ tool }: { tool: ToolDefinition }) {
   const isAvailable = tool.status !== 'coming-soon';
+  const href = isAvailable ? (tool.url ?? `/tools/${tool.slug}`) : '#';
+  const isExternal = isAvailable && !!tool.url;
 
   return (
     <Link
-      href={isAvailable ? `/tools/${tool.slug}` : '#'}
+      href={href}
+      target={isExternal ? '_blank' : undefined}
+      rel={isExternal ? 'noopener noreferrer' : undefined}
       className={cn(
         'group flex flex-col p-6 border border-paper-rule bg-white transition-all duration-150',
         isAvailable

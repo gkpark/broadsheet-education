@@ -3,6 +3,7 @@ import { ToolDefinition } from './types';
 export const TOOLS: ToolDefinition[] = [
   {
     slug: 'ai-plagiarism-checker',
+    url: 'https://student-work-analyzer.vercel.app',
     title: 'AI & Plagiarism Checker',
     tagline: 'Detect AI-generated content and plagiarism signals in any text.',
     description:
@@ -34,6 +35,7 @@ export const TOOLS: ToolDefinition[] = [
   },
   {
     slug: 'overton-window-search',
+    url: 'https://overton-window-hazel.vercel.app/',
     title: 'Overton Window Search',
     tagline: 'Explore where any policy idea sits on the political spectrum.',
     description:
