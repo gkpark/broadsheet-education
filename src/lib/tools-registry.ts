@@ -3,7 +3,7 @@ import { ToolDefinition } from './types';
 export const TOOLS: ToolDefinition[] = [
   {
     slug: 'ai-plagiarism-checker',
-    url: 'https://student-work-analyzer.vercel.app',
+    url: 'https://analyzer.broadsheet.education',
     title: 'AI & Plagiarism Checker',
     tagline: 'Analyze student writing for AI generation and originality.',
     description:
@@ -35,7 +35,7 @@ export const TOOLS: ToolDefinition[] = [
   },
   {
     slug: 'overton-window-search',
-    url: 'https://overton-window-hazel.vercel.app/',
+    url: 'https://overton.broadsheet.education',
     title: 'Overton Window Search',
     tagline: 'Spectrum-aware source discovery for students and educators.',
     description:
@@ -63,6 +63,38 @@ export const TOOLS: ToolDefinition[] = [
     metadata: {
       og_title: 'Overton Window Search | Broadsheet Education',
       og_description: 'Spectrum-aware source discovery for students and educators.',
+    },
+  },
+  {
+    slug: 'first-reading',
+    url: 'https://firstreading.broadsheet.education',
+    title: 'First Reading',
+    tagline: 'Search Oklahoma legislation and find your state legislators.',
+    description:
+      'Search current Oklahoma legislation and look up contact information for state legislators. Named for the first reading, the moment a bill is formally introduced in the legislature. A starting point for students engaging with civic process at the state level.',
+    icon: 'Landmark',
+    status: 'beta',
+    category: 'civics',
+    howToUse: [
+      {
+        step: 1,
+        heading: 'Search legislation',
+        body: 'Enter keywords to find current Oklahoma bills and track where they are in the legislative process.',
+      },
+      {
+        step: 2,
+        heading: 'Find your legislators',
+        body: 'Look up Oklahoma state legislators and get their contact information.',
+      },
+      {
+        step: 3,
+        heading: 'Engage with the process',
+        body: 'Use what you find to write letters, prepare testimony, or inform a research project.',
+      },
+    ],
+    metadata: {
+      og_title: 'First Reading | Broadsheet Education',
+      og_description: 'Search Oklahoma legislation and find your state legislators.',
     },
   },
 ];
